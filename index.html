@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Andrew Weldon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.css">
+<link rel="stylesheet" href="style.css" type="text/css"/>
+    
+<style>
+    h1, body {font-family: Verdana, sans-serif}
+    h2, h3, h4, h5, h6 {font-family: Georgia, serif}
+    .w3-bar, button {font-family: Verdana, sans-serif}
+</style>
+    
+<body class="w3-text-theme">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-l1 w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large" 
+               href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html"
+                class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+            <a href="pages/research.html"
+                class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white">Research</a>
+	    <a href="https://Astro-Weldon.github.io/CV.pdf"
+               class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-white">CV</a>
+        </div>
+        
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="pages/research.html" 
+	       class="w3-bar-item w3-button w3-padding-large w3-hover-white">Research</a>
+	    <a href="https://Astro-Weldon.github.io/CV.pdf"
+               class="w3-bar-item w3-button w3-padding-large w3-hover-white">CV</a>
+        </div>
+        
+        
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px; background-color: black; background-image: url('images/chile.jpg'); background-position: center top; background-repeat:no-repeat;">
+        <h1 class="w3-margin w3-jumbo" style="color: white;">Andrew Weldon</h1>
+        <p class="w3-xlarge" style="color: white;">Ph.D. Candidate of Astrophysics</p>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row">
+	    <div class="w3-col l2">
+    	    <p></p>
+        </div>
+	    <div class="w3-col l6 s12">
+                <h2 style="padding-left: 2%">About Me</h2>
+                <p class="w3-text-grey" style="text-align: justify;padding: 2% 2% 2% 4%;font-size: 16px;">
+			I am a Ph.D. student at the University of California, Riverside in the Physics and Astronomy Department, working with 
+                    	Dr. Naveen Reddy on the baryon cycle. My research interest is galaxy formation and evolution, especially the connection 
+                    	between galaxies and the circumgalactic medium (CGM) and intergalactic medium (IGM). I study galactic-scale outflows 
+                    	and inflows of high-redshift star-forming galaxies using low-ionization interstellar metal absorption lines. My work 
+			uses high- and low-resolution spectroscopy of galaxies in the MOSDEF survey. Please visit my 
+			<a href="https://Astro-Weldon.github.io/pages/research.html">Research page</a> for more information.
+                </p>
+        </div>
+        
+        <div class="w3-col l4 s12">
+            <img src="images/Me_homeoffice.jpg" id="me" alt="Picture" width="100%" height="auto">
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer> 
+        <div style="padding: 16px 16px 1px 16px; background-color: black; background-image: url('images/chile.jpg'); background-position: center bottom; background-repeat:no-repeat;">
+            <div style="font-size: 25px; color: white; text-align: center; vertical-align: middle;">
+                <a href="https://www.orcid.org/0000-0002-1272-9064">
+                    <i class="fa-brands fa-orcid w3-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/andrew-weldon">
+                    <i class="fab fa-linkedin w3-hover-opacity"></i></a><br>
+                <a style="font-size: 15px" href="mailto: aweld004@ucr.edu">Email Me</a>
+            </div>
+            <div>
+                <p style="font-size: 10px; text-align: center; vertical-align: bottom; color: white">
+                    Space Images &copy ESO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+
+</body>
+</html>
